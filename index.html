@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tica-tacoe</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<article class="board">
+    <table id="game_field">
+        <tbody>
+            <tr id="row_0">
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+            </tr>
+            <tr id="row_1">
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+            </tr>
+            <tr id="row_2">
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+            </tr>
+            <tr id="row_3">
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+                <td class="field"></td>
+            </tr>
+        </tbody>
+    </table>
+</article>
+<script>
+    const row = document.getElementById("row_0");
+    setTimeout(() =>{
+        row.children[0].classList.add('active');
+    }, 1000)
+</script>
+</body>
+</html>
