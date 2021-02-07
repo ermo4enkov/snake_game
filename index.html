@@ -70,9 +70,36 @@
 </article>
 <script>
     const row = document.getElementById("row_0");
-    setTimeout(() =>{
-        row.children[0].classList.add('active');
-    }, 1000)
+    const ArrowRight = "ArrowRight";
+    let count = 0;
+    const children = row.children
+    const length = children.length
+    document.addEventListener("keydown", function (e){
+        console.log(e.key)
+        console.log(children)
+        if (e.key === ArrowRight){
+            if (count === length){
+                row.children[length-1].classList.remove('active');
+                count = 0
+            }
+            row.children[count].classList.add('active');
+            if (count !== 0){
+                row.children[count-1].classList.remove('active');
+            }
+
+
+
+            count += 1;
+        }
+    })
+
+
+        // for (let count = 0; count < children.length; count += 1){
+        //     setTimeout(() => {
+        //         row.children[count].classList.add('active');
+        //     },1000)
+        // }
+
 </script>
 </body>
 </html>
